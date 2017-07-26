@@ -1,0 +1,27 @@
+<!DOCTIPE html>
+<html>
+  <head>
+	   <title>Ejercicio 5</title>
+     <meta charset="utf-8">
+   </head>
+   <body>
+
+    <div>
+       <ul data-continent="North America">
+         <li data-species="California condor">Critically Endangered</li>
+         <li data-species="American bison">Near Threatened</li>
+       </ul>
+       <ul data-continent="Europe">
+         <li data-species="Cave bear">Extinct</li>
+       </ul>
+    </div>
+
+    <script type="text/javascript">
+        function endangeredSpecies(continent, species) {
+          // Implement the function here.
+          return $("ul[data-continent='" + continent + "'] li[data-species='" + species + "']").html();
+        }
+    </script>
+
+   </body>
+</html>
